@@ -11,22 +11,14 @@ sortByHeight(a) = [-1, 150, 160, 170, -1, -1, 180, 190].'''
 
 
 def sortByHeight(a):
-	x=sorted(a)
+	x=sorted([i for i in a if i>0])
 	indexTree=[]
 	for i in range(len(a)):
 		if a[i]==-1:
 			indexTree.append(i)
-	for i in range(len(x)):
-		if x[i]!=-1:
-			x=x[i:]
-			break
-	if -1 in x:
-		x=[]
 	for i in indexTree:
 		x.insert(i,-1)
 	return x
 
-
-
-a = [-1,-1,-1]
+a = [-1, 150, 190, 170, -1, -1, 160, 180]
 print(sortByHeight(a))
