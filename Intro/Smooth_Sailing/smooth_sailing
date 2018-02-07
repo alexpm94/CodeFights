@@ -4,6 +4,15 @@
 Created on Tue Feb  6 17:54:08 2018
 
 @author: alexpm94
+
+Given an array of strings, return another array 
+containing all of its longest strings.
+
+Example
+
+For inputArray = ["aba", "aa", "ad", "vcd", "aba"], 
+the output should be
+allLongestStrings(inputArray) = ["aba", "vcd", "aba"].
 """
 
 def allLongestStrings(inputArray):

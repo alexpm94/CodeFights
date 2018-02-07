@@ -1,9 +1,16 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 """
 Created on Tue Feb  6 22:30:20 2018
 
 @author: alexpm94
+Given two strings, find the number of common 
+characters between them.
+
+Example
+
+For s1 = "aabcc" and s2 = "adcaa", the output should be
+commonCharacterCount(s1, s2) = 3.
+
+Strings have 3 common characters - 2 "a"s and 1 "c".
 """
 
 s1 = "cb"
@@ -44,6 +51,5 @@ def common2(ss1,ss2):
             s2 = s2[1:]
     return count
 
-#print(common2(s1,s2))
-            
+#print(common2(s1,s2))       
 print(commonCharacterCount(s1, s2))
