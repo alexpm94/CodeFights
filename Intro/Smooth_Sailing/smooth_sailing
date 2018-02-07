@@ -1,0 +1,18 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Feb  6 17:54:08 2018
+
+@author: alexpm94
+"""
+
+def allLongestStrings(inputArray):
+    maxC=max([len(i) for i in inputArray])#stands for max of characters
+    nL=[] #stands for new list
+    for word in inputArray:
+        if len(word)==maxC:
+            nL.append(word)
+    return nL
+            
+a = ["aba", "aa", "ad", "vcd", "aba"]
+print(allLongestStrings(a))
